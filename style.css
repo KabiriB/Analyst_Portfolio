@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #03246b;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 4px solid #b9b5a6;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #b9b5a6;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #160d08;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #03246b;
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #03246b;
+  margin-bottom: 0.5rem;
+}
+
+section p, section ul {
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #03246b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #F2C230;
+  color: #035159;
+}
+
+footer {
+  background-color: #03246b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Tableau Dashboard Styling */
+.tableauPlaceholder {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.tableauPlaceholder iframe, .tableauViz {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #035159;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+
+  .tableauPlaceholder iframe, .tableauViz {
+    height: 400px; /* Smaller height for smaller screens */
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .tableauPlaceholder iframe, .tableauViz {
+    height: 300px; /* Adjust height further for very small screens */
+  }
+}
